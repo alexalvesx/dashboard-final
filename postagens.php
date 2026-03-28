@@ -16,7 +16,7 @@
                     <p>Visualize e gerencie as postagens.</p>
                 </div>
 
-                <a href="cad-usuarios.php" class="btn-add"><i class="fa-solid fa-plus"></i> Adicionar Postagem</a>
+                <a href="cad-postagens.php" class="btn-add"><i class="fa-solid fa-plus"></i> Adicionar Postagem</a>
             </div>
             <table class="table-responsive">
                 <thead>

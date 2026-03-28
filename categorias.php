@@ -16,7 +16,7 @@
                     <p>Visualize e gerencie as categorias.</p>
                 </div>
 
-                <a href="cad-usuarios.php" class="btn-add"><i class="fa-solid fa-plus"></i> Adicionar Categoria</a>
+                <a href="cad-categorias.php" class="btn-add"><i class="fa-solid fa-plus"></i> Adicionar Categoria</a>
 
             </div>
             <table class="table-responsive">

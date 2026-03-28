@@ -10,7 +10,7 @@ $passMaster = "123456";
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-if ($email = $userMaster && $senha == $passMaster) {
+if ($email == $userMaster && $senha == $passMaster) {
     // Sucesso: vai para o Dashboard
     header ("Location: index.php");
 } else {

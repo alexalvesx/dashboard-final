@@ -1,108 +1,120 @@
+/* Importa a biblioteca de ícones Font Awesome do servidor externo */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
+/* Container principal que segura a barra lateral e o conteúdo */
 .dashboard-container {
-    display: flex;
-    align-items: stretch;
-    flex: 1;
+    display: flex; /* Ativa o modo Flexbox (elementos lado a lado) */
+    align-items: stretch; /* Faz os filhos (nav e main) esticarem até o fundo */
+    flex: 1; /* Faz o container crescer para ocupar o espaço disponível */
 }
 
+/* Área principal de conteúdo */
 main {
     display: flex;
-    justify-content: space-between;
-    /* Espalhas os cards usando o espaço livre */
-    flex-wrap: wrap;
-    /* Se a tela encolher, joga o card pra linha de baixo */
-    gap: 20px;
-    /* Espaço entre colunas */
-    padding: 20px;
-    flex: 1;
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    flex-wrap: wrap; /* Permite que itens quebrem para a próxima linha */
+    gap: 20px; /* Espaçamento entre os elementos internos */
+    padding: 20px; /* Espaço interno nas bordas */
+    flex: 1; /* Ocupa todo o resto da largura da tela */
     /*Faz o main crescer para ocupar espaço disponível entre o header e o footer */
     /*Adicione essa linha se precisar corrigir o alinhamento das linhas de cards */
     align-content: flex-start;
     /* Agrupa as linhas de cards no topo do main */
 }
 
+/* Barra de Navegação Lateral */
 nav {
-    width: 200px;
-    background-color: #2c3e50;
+    width: 200px; /* Largura fixa da barra lateral */
+    background-color: #2c3e50; /* Cor de fundo azul escuro */
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Organiza os itens da nav em coluna (vertical) */
 }
 
+/* Lista dentro da navegação */
 nav ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 0;
-    list-style: none;
+    list-style: none; /* Remove as "bolinhas" da lista */
 }
 
+/* Links do menu */
 nav a {
     color: white;
-    text-decoration: none;
-    display: block;
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: block; /* Ocupa a largura total disponível */
     padding: 8px 12px;
-    border-radius: 4px;
-    transition: background 0.3s;
+    border-radius: 4px; /* Arredonda as pontas */
+    transition: background 0.3s; /* Suaviza a mudança de cor ao passar o mouse */
 }
 
+/* Efeito ao passar o mouse no menu */
 nav a:hover {
-    background-color: #34495e;
-    color: #ffcc00;
+    background-color: #34495e; /* Fundo um pouco mais claro */
+    color: #ffcc00; /* Texto amarelo */
 }
 
+/* Bloco do perfil no final da sidebar */
 .perfil-usuario {
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil */
+    margin-top: auto; /* Joga o perfil para o final do espaço disponível */
 }
 
+/* Foto do usuário */
 .perfil-usuario img {
     width: 40px;
-    border-radius: 50%;
+    border-radius: 50%; /* Deixa a imagem redonda */
 }
 
+/* Container para agrupar vários cards */
 .container-card {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+/* Estilo do Card Individual */
 article {
     display: flex;
-    flex: 1;
+    flex: 1; /* Faz o card ser flexível */
     flex-direction: column;
-    min-width: 250px;
+    min-width: 250px; /* Largura mínima para não ficar muito magro */
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Títulos dentro do card */
 article h2 {
     color: #004a8d;
     margin-bottom: 10px;
 }
 
+/* Parágrafos dentro do card */
 article p {
     margin-bottom: 20px;
     color: #555;
 }
 
+/* Configurações globais do corpo da página */
 body {
-    background-color: #dfdfdf;
+    background-color: #dfdfdf; /* Fundo cinza claro */
     font-family: 'Courier New', Courier, monospace;
     color: #333333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Garante que o corpo ocupe 100% da altura da tela */
 }
 
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -111,13 +123,15 @@ footer {
     font-size: 14px;
 }
 
+/* Reset Global: remove margens e paddings padrão do navegador */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Botão padrão */
 .btn {
-    margin-top: auto;
+    margin-top: auto; /* Se estiver em um flex, joga o botão para o fundo */
     display: inline-block;
     text-align: center;
     background-color: #004a8d;
@@ -132,14 +146,14 @@ footer {
     background-color: #003366;
 }
 
-/*Container da Tabela */
+/* Container que permite rolagem lateral em tabelas */
 .table-responsive {
-    width: 100; /* modificado */
+    width: 100; /*100%? modificado */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-collapse: collapse;
-    overflow: hidden;
+    border-collapse: collapse; /* Remove espaços entre bordas da tabela */
+    overflow: hidden; /* Garante que o conteúdo respeite o border-radius */
 }
 
 table {
@@ -147,38 +161,42 @@ table {
     border-collapse: collapse;
 }
 
-/* Cabeçalho Profissional */
+/* Cabeçalho da Tabela */
 th {
     background-color: #2c3e50;
     color: #ffffff;
     padding: 15px;
     text-align: left;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Transforma texto em MAIÚSCULO */
 }
 
-/*Células de Dados */
+/* Células da Tabela */
 td {
     padding: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee; /* Linha fina entre as linhas da tabela */
     font-size: 14px;
     color: #444;
 }
 
-/* Efeito Zebra e Hover */
+/* Efeito Zebra: cores alternadas nas linhas */
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Destaque ao passar o mouse na linha da tabela */
 tbody tr:hover {
     background-color: #d1d7df;
     /*Destaque suave ao passar o omouse */
 }
 
+/* Alinhamento da coluna de ações */
 td.acoes, th.acoes{
     text-align: center;
-    vertical-align: center;
+    vertical-align: center; /* vertical-align aceita middle em tabelas? */
 }
+
+/* Botão de ícone (ex: editar/excluir) */
 .btn-icon {
     background: none;
     border: none;
@@ -190,9 +208,8 @@ td.acoes, th.acoes{
 /* Formatação do formulário */
 .card-form {
     background-color: white;
-    max-width: 700px;
-    /* Evita que o form fique muito largo em telas grandes */
-    margin: 20px auto;
+    max-width: 700px; /* Limita a largura do formulário */
+    margin: 20px auto; /* Centraliza horizontalmente */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
@@ -204,20 +221,22 @@ td.acoes, th.acoes{
     padding-bottom: 15px;
 }
 
+/* Grupo de campo (Label + Input) */
 .form-group {
     display: flex;
-    flex-direction: column;
-    /* Label em cima, Input embaixo */
+    flex-direction: column;/* Label em cima, Input embaixo */
     gap: 8px;
     margin-bottom: 20px;
 }
 
+/* Linha com múltiplos campos */
 .form-row {
     display: flex;
     gap: 20px;
     /* Coloca dois campos lado a lado */
 }
 
+/* Classe utilitária para ocupar espaço flexível */
 .flex-1 {
     flex: 1;
 }
@@ -228,6 +247,7 @@ label {
     font-size: 14px;
 }
 
+/* Estilo comum para inputs e selects */
 input,
 select {
     padding: 12px;
@@ -236,12 +256,14 @@ select {
     transition: 0.3s;
 }
 
+/* Quando o usuário clica no campo */
 input:focus {
     border-color: #004a8d;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 74, 141, 0.1);
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 0 3px rgba(0, 74, 141, 0.1); /* Brilho suave azul */
 }
 
+/* Botão Salvar (Verde) */
 .btn-save {
     background-color: #27ae60;
     color: white;
@@ -256,6 +278,7 @@ input:focus {
     background-color: #058d3e;
 }
 
+/* Botão Cancelar (Cinza/Vermelho) */
 .btn-cancel {
     text-decoration: none;
     background-color: #faf4f4;
@@ -272,6 +295,7 @@ input:focus {
     background-color: #991b1b;
 }
 
+/* Status Ativo (Verde claro) */
 .ativo {
     background-color: #d1fae5; /* Fundo verde bem claro */
     color: #065f46;            /* Texto verde escuro para contraste */
@@ -283,6 +307,7 @@ input:focus {
   
 }
 
+/* Status Inativo (Vermelho claro) */
 .inativo {
     text-decoration: none;
     background-color: #fee2e2;
@@ -295,14 +320,17 @@ input:focus {
    
 }
 
+/* Badge (etiqueta genérica) */
 .badge {
     text-decoration: none;
     border: none;
     border-radius: 10px;
     padding: 5px;
-    cursor: default;
-    letter-spacing: 0.5px;
+    cursor: default; /* Indica que não é clicável */
+    letter-spacing: 0.5px; /* Espaço entre letras */
 }
+
+/* Cores por Nível de Acesso */
 .user {
     color: rgb(0, 0, 0);
 }
@@ -315,7 +343,7 @@ input:focus {
     color:rgb(98, 39, 153);
 }
 
-
+/* Botão Adicionar */
 .btn-add {
     background-color: #004a8d;
     color: white;
@@ -331,6 +359,7 @@ input:focus {
     background-color: #003366;
 }
 
+/* Cabeçalho do conteúdo (Título + Botão Adicionar) */
 .header-content {
     display: flex;
     justify-content: space-between; /* Espaço entre o título e o botão */
@@ -339,6 +368,7 @@ input:focus {
     margin-bottom: 10px;
 }
 
+/* Hover nos ícones de ação */
 .btn-icon:hover { 
 color: #ffcc00; 
 }

@@ -12,10 +12,10 @@ $senha = $_POST['senha'];
 
 if ($email == $userMaster && $senha == $passMaster) {
     // Sucesso: vai para o Dashboard
-    header ("Location: index.php");
+    header("Location: index.php");
 } else {
     // Erro: Volta para o login com um sinalizador
-    header ("Location: login.php?erro=1");
+    header("Location: login.php?erro=1");
 }
 exit();
 

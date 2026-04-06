@@ -38,16 +38,16 @@
                         <td>Alexsander Rodrigues</td>
                         <td>alex_alves.x@hotmail.com</td>
                         <td><?php
-                            // Simulando o nível que viria do banco de dados
-                            $nivelAcesso = 2;
+                        // Simulando o nível que viria do banco de dados
+                        $nivelAcesso = 2;
 
-                            if ($nivelAcesso == 2) {
-                                // Se for 2, renderiza o HTML do Admin
-                                echo '<span class="badge admin">Administrador</span>';
-                            } else {
-                                // Se for qualquer outro valor, renderiza o Usuário
-                                echo '<span class="badge user">Usuário</span>';
-                            } ?></td>
+                        if ($nivelAcesso == 2) {
+                            // Se for 2, renderiza o HTML do Admin
+                            echo '<span class="badge admin">Administrador</span>';
+                        } else {
+                            // Se for qualquer outro valor, renderiza o Usuário
+                            echo '<span class="badge user">Usuário</span>';
+                        } ?></td>
                         <td><span class="badge ativo">Ativo</span></td>
                         <td class="acoes"><button class="btn-icon"><i class="fa-solid fa-pen"></i></td>
                         <td class="acoes"><button class="btn-icon"><i class="fa-solid fa-circle-xmark"></i></td>
@@ -58,16 +58,16 @@
                         <td>Eric Freitas</td>
                         <td>eric@unifev.edu.br</td>
                         <td><?php
-                            // Simulando o nível que viria do banco de dados
-                            $nivelAcesso = 1;
+                        // Simulando o nível que viria do banco de dados
+                        $nivelAcesso = 1;
 
-                            if ($nivelAcesso == 1) {
-                                // Se for 2, renderiza o HTML do Admin
-                                echo '<span class="badge editor">Editor</span>';
-                            } else {
-                                // Se for qualquer outro valor, renderiza o Usuário
-                                echo '<span class="badge user">Usuário</span>';
-                            } ?></td>
+                        if ($nivelAcesso == 1) {
+                            // Se for 2, renderiza o HTML do Admin
+                            echo '<span class="badge editor">Editor</span>';
+                        } else {
+                            // Se for qualquer outro valor, renderiza o Usuário
+                            echo '<span class="badge user">Usuário</span>';
+                        } ?></td>
                         <td><span class="badge ativo">Ativo</span></td>
                         <td class="acoes"><button class="btn-icon"><i class="fa-solid fa-pen"></i></td>
                         <td class="acoes"><button class="btn-icon"><i class="fa-solid fa-circle-xmark"></i></td>
@@ -78,16 +78,16 @@
                         <td>John Lennon da Silva</td>
                         <td>john@outlook.com</td>
                         <td><?php
-                            // Simulando o nível que viria do banco de dados
-                            $nivelAcesso = 0;
+                        // Simulando o nível que viria do banco de dados
+                        $nivelAcesso = 0;
 
-                            if ($nivelAcesso == 2) {
-                                // Se for 2, renderiza o HTML do Admin
-                                echo '<span class="badge admin">Administrador</span>';
-                            } else {
-                                // Se for qualquer outro valor, renderiza o Usuário
-                                echo '<span class="badge user">Usuário</span>';
-                            } ?></td>
+                        if ($nivelAcesso == 2) {
+                            // Se for 2, renderiza o HTML do Admin
+                            echo '<span class="badge admin">Administrador</span>';
+                        } else {
+                            // Se for qualquer outro valor, renderiza o Usuário
+                            echo '<span class="badge user">Usuário</span>';
+                        } ?></td>
                         <td><span class="badge inativo">Inativo</span></td>
                         <td class="acoes"><button class="btn-icon"><i class="fa-solid fa-pen"></i></td>
                         <td class="acoes"><button class="btn-icon"><i class="fa-solid fa-circle-xmark"></i></td>
